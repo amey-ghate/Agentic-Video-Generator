@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env.*
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Generated outputs
+video_run/
+*.mp4
+*.png
+*.mp3
