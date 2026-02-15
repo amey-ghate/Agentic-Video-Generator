@@ -1,0 +1,9 @@
+streamlit
+python-dotenv
+groq
+langgraph
+pydantic
+gtts
+pillow
+moviepy
+imageio-ffmpeg
