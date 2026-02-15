@@ -31,11 +31,6 @@ Important: Groq is an LLM API. It generates text (script + prompts), but it cann
     *   Optional debug view (raw JSON)
         
 
-🧱 Repo Structure
------------------
-
-groq-agentic-video/app.pyrequirements.txtREADME.md.gitignore.env.examplevideo\_run/ # created at runtime (ignored)
-
 ✅ Prerequisites
 ---------------
 
@@ -52,39 +47,53 @@ If you see: 403 Access denied. Please check your network settings.Your network/V
 -------------
 
 ### 1) Clone
-
+```bash
 git clone https://github.com/amey-ghate/Agentic-Video-Generator.git
 
 cd groq-agentic-video
+```
 
 ### 2) Create & activate a virtual environment
 
-Windows (PowerShell)python -m venv venvvenv\\Scripts\\Activate.ps1
+Windows (PowerShell)
+```bash
+python -m venv venv
+venv\Scripts\Activate.ps1
+```
 
-Windows (CMD)python -m venv venvvenv\\Scripts\\activate.bat
+Windows (CMD)
+```bash
+python -m venv venv
+venv\Scripts\activate.bat
+```
 
-macOS / Linuxpython3 -m venv venvsource venv/bin/activate
+macOS / Linux
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
 ### 3) Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 4) Set environment variables (.env)
 
-GROQ\_API\_KEY=YOUR\_GROQ\_KEY\_HEREGROQ\_MODEL=llama-3.3-70b-versatile
-
+```bash
+GROQ_API_KEY=YOUR_GROQ_KEY_HERE
+GROQ_MODEL=llama-3.3-70b-versatile
+```
 Never commit .env (already in .gitignore).
 
 ### 5) Run the Streamlit app
-
+```bash
 streamlit run app.py
+```
 
 🛠️ Configuration
 -----------------
-
-### Environment variables
-
-GROQ\_API\_KEY (required): your Groq API keyGROQ\_MODEL (required): model name (default: llama-3.3-70b-versatile)
 
 ### Script constraints (in code)
 
